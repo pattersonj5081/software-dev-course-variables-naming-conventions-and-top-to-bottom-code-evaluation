@@ -24,9 +24,19 @@ Things to reflect on:
   
 */
 
-let a = "Alice";
-let b = 5;
-let c = 20;
-let d = a + " bought " + b + " items for $" + c + ".";
+let customerName = "Alice"; // Changed a to customerName
+let numberOfItems = 5; // Changed b to numberOfItems
+let totalCost = 20; // Changed c to totalCost
 
-console.log(d);
+// Enhanced the string and corrected syntax for pricePerItem
+let pricePerItem = totalCost / numberOfItems; // Calculate the price per item
+let purchaseSummary = customerName + " bought " + numberOfItems + " items for $" + totalCost + " at $" + pricePerItem + " per item."; // Corrected d and added pricePerItem
+
+console.log(purchaseSummary);
+
+// Additional enhancement: Displaying the price per item
+console.log(pricePerItem);
+
+
+
+
